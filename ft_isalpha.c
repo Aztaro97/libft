@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 14:47:43 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/03/28 17:21:46 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/09 20:22:49 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	ft_isalpha("f");
-	return (0);
-}
+// int	main(void)
+// {
+// 	ft_isalpha("f");
+// 	return (0);
+// }

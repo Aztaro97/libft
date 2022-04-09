@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 21:42:47 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/03/28 21:43:36 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/09 20:21:16 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ void	*ft_memset(void *s, int c, size_t len)
 	return (s);
 }
 
-int	main(void)
-{
-	printf("%p \n", ft_memset("Hello", 'e', 2));
-
-	return (0);
-}
+// int	main(void)
+// {
+// 	char str[] = "hello word";
+// 	printf("%s \n", ft_memset(str, 'e', 2));
+// 	return (0);
+// }

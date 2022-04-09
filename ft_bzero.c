@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/24 18:39:28 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 20:22:54 by ataro-ga         ###   ########.fr       */
+/*   Created: 2022/04/09 13:46:50 by ataro-ga          #+#    #+#             */
+/*   Updated: 2022/04/09 20:30:35 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
-	{
-		return (1);
-	}
-	return (0);
+	ft_memset(s, '\0', n);
 }
 
 // int	main(void)
 // {
-// 	ft_isalnum("8");
+// 	ft_memset();
 // 	return (0);
 // }

@@ -1,28 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/24 18:39:28 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 20:22:54 by ataro-ga         ###   ########.fr       */
+/*   Created: 2022/04/09 19:14:47 by ataro-ga          #+#    #+#             */
+/*   Updated: 2022/04/09 20:13:38 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
+	unsigned char		*x;
+	const unsigned char	*y;
+
+	x = (unsigned char *)dst;
+	y = (const unsigned char *)src;
+	if (x == y)
+		return (dst);
+	else if (x > y)
 	{
-		return (1);
+		y = y + len - 1;
+		x = x + len - 1;
+		while (len > 0)
+		{
+			*x = *y;
+			x--;
+			y--;
+			len--;
+		}
 	}
-	return (0);
+	else
+		dst = ft_memcpy(x, y, len);
+	return (dst);
 }
 
 // int	main(void)
 // {
-// 	ft_isalnum("8");
+// 	printf("%s", ft_memmove("err", "hhe", 9));
 // 	return (0);
 // }
+
