@@ -1,6 +1,6 @@
 #ifndef	HEADERFILE_H
 #define HEADERFILE_H
-# include <stdio.h>
+#include <stdio.h>
 
 int	ft_isalpha(int c);
 int	ft_isalnum(int c);
