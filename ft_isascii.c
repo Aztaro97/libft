@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:39:14 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 20:30:26 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:20:54 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,3 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 16:30:22 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 20:26:37 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:21:03 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	ft_isdigit(5);
-// 	return (0);
-// }

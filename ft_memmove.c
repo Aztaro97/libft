@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/09 19:14:47 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 20:13:38 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:22:54 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		dst = ft_memcpy(x, y, len);
 	return (dst);
 }
-
-// int	main(void)
-// {
-// 	printf("%s", ft_memmove("err", "hhe", 9));
-// 	return (0);
-// }
-

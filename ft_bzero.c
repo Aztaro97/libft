@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/09 13:46:50 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 20:30:35 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:20:19 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);
 }
-
-// int	main(void)
-// {
-// 	ft_memset();
-// 	return (0);
-// }

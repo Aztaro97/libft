@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 13:38:35 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/05 16:02:16 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:23:41 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,4 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	}
 	return (t);
-}
-
-int	main(void)
-{
-	printf("%s\n", ft_strrchr("hello", 'o'));
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:35:34 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/03/29 15:38:52 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:23:49 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,4 @@ int	ft_tolower(int c)
 		c = c + 32;
 	}
 	return (c);
-}
-
-int	main(void)
-{
-	printf("%c \n", ft_tolower('G'));
-	return (0);
 }

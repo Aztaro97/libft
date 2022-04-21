@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 16:03:25 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 17:02:09 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/21 16:46:29 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		}
 		i++;
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	printf("%d\n", ft_strncmp("hello", "ali", 4));
 	return (0);
 }

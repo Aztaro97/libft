@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/09 13:58:10 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/09 20:13:34 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:22:47 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-// int	main(void)
-// {
-// 	char dst[] = "hell";
-// 	char src[] = "mou";
-
-// 	printf("%s\n", ft_memcpy(dst, src, 3));
-// 	return (0);
-// }

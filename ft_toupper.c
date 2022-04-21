@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:06:03 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/03/29 15:35:05 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:23:55 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,4 @@ int	ft_toupper(int c)
 		c = c - 32;
 	}
 	return (c);
-}
-
-int	main(void)
-{
-	printf("%c\n", ft_toupper('d'));
-	return (0);
 }

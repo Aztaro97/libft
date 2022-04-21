@@ -6,13 +6,13 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 20:09:00 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/04 13:45:55 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:23:31 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -22,10 +22,4 @@ int	ft_strlen(char *str)
 		i++;
 	}
 	return (i);
-}
-
-int	main(void)
-{
-	printf("%d\n", ft_strlen("Hello"));
-	return (0);
 }
