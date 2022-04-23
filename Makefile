@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/04/24 00:36:40 by ataro-ga          #+#    #+#              #
+#    Updated: 2022/04/24 00:36:40 by ataro-ga         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME		= 	libft.a
 SRCS		= 	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
       				ft_isalpha.c ft_isascii.c ft_isdigit.c \
@@ -9,13 +21,11 @@ SRCS		= 	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
       				ft_strlen.c ft_strmapi.c ft_strncmp.c \
       				ft_strnstr.c ft_strrchr.c ft_strtrim.c \
       				ft_substr.c ft_tolower.c ft_toupper.c
-
-	   
 OBJS		=		${SRCS:.c=.o}
-#BONUS_S 	= 	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
+BONUS_S 	= 	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
       				ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
       				ft_lstsize.c ft_lstnew.c ft_lstmap.c
-#BONUS_O		= 	${BONUS_S:.c=.o}
+BONUS_O		= 	${BONUS_S:.c=.o}
 CC			= 	gcc
 RM			= 	rm -rf
 CFLAGS		= 	-Wall -Wextra -Werror
@@ -23,14 +33,11 @@ CFLAGS		= 	-Wall -Wextra -Werror
 ${NAME}:		${OBJS}
 		ar -rcs ${NAME} ${OBJS}
 all:		${NAME}
-bonus:		${NAME} 
-#${BONUS_O}
-		ar -rc ${NAME} 
-#		${BONUS_O}
+bonus:		${NAME} ${BONUS_O}
+		ar -rc ${NAME} ${BONUS_O}
 clean:		
 	${RM} ${OBJS}
 fclean: 	clean
-	${RM} ${NAME} 
-#	${BONUS_O}
+	${RM} ${NAME} ${BONUS_O}
 re :        fclean all
 rebonus:    fclean bonus
