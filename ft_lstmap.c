@@ -6,13 +6,13 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 00:21:32 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/24 00:21:32 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/25 20:49:44 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list		*new_list;
 	t_list		*elem;

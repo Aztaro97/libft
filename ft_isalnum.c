@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 18:39:28 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/20 09:35:44 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/25 13:03:37 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
-	{
 		return (1);
-	}
 	return (0);
 }

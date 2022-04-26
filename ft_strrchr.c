@@ -6,7 +6,7 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 13:38:35 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/12 12:23:41 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/25 20:45:17 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,23 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*t;
+	size_t	i;
+	char	x;
 
-	t = NULL;
-	while (*s != '\0')
+	i = 0;
+	x = ((char)c);
+	while (s[i] != '\0')
+		i++;
+	while (i > 0)
 	{
-		if (*s == c)
-		{
-			t = (char *)s;
-		}
-		s++;
+		if (s[i] == x)
+			return (&((char *)s)[i]);
+		i--;
 	}
-	if (c == '\0')
+	if (i == 0)
 	{
-		return ((char *)s);
+		if (s[i] == x)
+			return (&((char *)s)[i]);
 	}
-	return (t);
+	return (0);
 }

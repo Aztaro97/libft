@@ -6,76 +6,77 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 11:59:38 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/21 17:00:28 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/25 16:33:39 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count(char const *s, char c)
+int	count_strings(char const *s, char c)
 {
-	int	words;
-	int	i;
+	int	act_pos;
+	int	str_count;
 
-	i = 0;
-	words = 0;
-	while (s[i])
+	act_pos = 0;
+	str_count = 0;
+	if (s[act_pos] == c)
+		str_count--;
+	while (s[act_pos] != '\0')
 	{
-		if ((s[i] != c && s[i + 1] == c) || (s[i + 1] == '\0' && s[i] != c ))
-			words++;
-		i++;
+		if (s[act_pos] == c && s[act_pos + 1] != c && s[act_pos + 1] != '\0')
+			str_count++;
+		act_pos++;
 	}
-	return (words);
+	str_count++;
+	return (str_count);
 }
 
-int	ft_isspace(char c, char cd)
+char	*malloc_strings(const char *s, char c)
 {
-	if (c == cd)
-		return (1);
-	return (0);
-}
-
-char	*ft_word(char *str, char c)
-{
-	int		i;
 	char	*word;
+	int		i;
 
 	i = 0;
-	word = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1));
+	while (s[i] && s[i] != c)
+		i++;
+	word = (char *)malloc(sizeof(char) * (i + 1));
 	if (!word)
-		return (0);
-	while (str[i] && !ft_isspace(str[i], c) && str[i] != '\0')
+		return (NULL);
+	i = 0;
+	while (s[i] && s[i] != c)
 	{
-		word[i] = str[i];
+		word[i] = s[i];
 		i++;
 	}
 	word[i] = '\0';
 	return (word);
 }
 
-char	**ft_split(char *str, char c)
+char	**ft_split(char const *s, char c)
 {
+	int		words;
+	char	**tab;
 	int		i;
-	char	**words;
 
-	i = 0;
-	if (!str)
+	if (!s)
 		return (NULL);
-	words = (char **)malloc(sizeof(char *) * (ft_count(str, c) + 1));
-	if (!words)
+	words = count_strings(s, c);
+	tab = (char **)malloc(sizeof(char *) * (words + 1));
+	if (!tab)
 		return (NULL);
-	while (*str == c)
-		str++;
 	i = 0;
-	while (*str)
+	while (*s)
 	{
-		words[i] = ft_word(str, c);
-		while (*str && !ft_isspace(*str, c))
-			str++;
-		while (*str && ft_isspace(*str, c))
-			str++;
-		i++;
+		while (*s && *s == c)
+			s++;
+		if (*s && *s != c)
+		{
+			tab[i] = malloc_strings(s, c);
+			i++;
+			while (*s && *s != c)
+				s++;
+		}
 	}
-	words[i] = NULL;
-	return (words);
+	tab[i] = NULL;
+	return (tab);
 }

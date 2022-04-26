@@ -6,13 +6,13 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 23:54:58 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/23 23:54:58 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/25 20:48:24 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int		count;
 

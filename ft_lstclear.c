@@ -6,13 +6,13 @@
 /*   By: ataro-ga <abdoulaziztarogao@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 00:11:54 by ataro-ga          #+#    #+#             */
-/*   Updated: 2022/04/24 00:11:54 by ataro-ga         ###   ########.fr       */
+/*   Updated: 2022/04/25 20:46:04 by ataro-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list		*aux;
 
